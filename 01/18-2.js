@@ -55,5 +55,12 @@ function fuc(a, b) {
 // thisArg mapFn 실행 시에 this로 사용할 값.
 // => return 새로운 Array.인스턴스 
 
+// 시퀀스 생성기(range) 
+
+const range = (start, stop, step) => {
+ return Array.from( {length: (stop - start) / step + 1}, (_, i) => start + (i * step));
+} 
+
+console.log(range(1, 2, 3));
 
 

@@ -87,5 +87,8 @@ function cst() {}
   //   x() {}
   // };
 
-  // new obj.x(); // typeError ... 
+  // new obj.x(); // typeError ...
+  
+  //new.target 
+ 
 

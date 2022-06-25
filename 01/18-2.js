@@ -62,5 +62,4 @@ const range = (start, stop, step) => {
 } 
 
 console.log(range(1, 2, 3));
-
-
+console.clear()

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    @font-face {
+      font-family: 'NEXON Lv1 Gothic OTF';
+      src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'NEXON Lv1 Gothic OTF';
+    }
+
+    #WelcomeBtn {
+      border: none;
+      font-size: 20px;
+      padding: 10px 20px;
+      border-radius: 5px;
+      letter-spacing: 1px;
+      cursor: pointer;
+      font-family: initial;
+    }
+
+    #title {
+      background: #1a6cff;
+      padding: 10px 20px;
+      border-radius: 5px;
+      color: white;
+      letter-spacing: 1px;
+      box-shadow: 0 5px 20px lightgrey;
+      transition: .3s;
+    }
+
+    body>button,
+    h1 {
+      transform: translateY(100px);
+    }
+
+    .active {
+      animation: updown 1s infinite reverse;
+      transition: transform .3s;
+    }
+
+    @keyframes updown {
+      0% {
+        transform: translateY(120px);
+      }
+
+      50% {
+        transform: translateY(100px);
+      }
+
+      100% {
+        transform: translateY(120px);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <button id="WelcomeBtn">CLICK ME!</button>
+  <script src="./dist/typescript_blockchain02-1.js"></script>
+</body>
+
+</html>
